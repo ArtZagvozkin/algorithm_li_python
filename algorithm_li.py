@@ -197,33 +197,4 @@ buttons_pnl.add(btn_new_map)
 btn_build_route = Button(text="Build route", width=15, command=btn_build_route_click)
 buttons_pnl.add(btn_build_route)
 
-
-
-
-
 window.mainloop()
-
-
-
-def main():
-    main = ''
-    sr = SearchRoute(50, 50, 75)
-    sr.genMap()
-    sr.showMap()
-    print('--------------------------------------------------')
-    sr.buildRoute()
-    sr.showMap()
-
-    while main != '2':
-        print('\n')
-        print('1. Generate new map and build route')
-        print('2. Exit')
-        main = input('Type action: ')
-        
-        if main == '1':
-            sr.genMap()
-            sr.showMap()
-            print('--------------------------------------------------')
-            sr.buildRoute()
-            sr.showMap()
-
