@@ -1,4 +1,7 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/python3
+#Artem Zagvozkin
+#Algorithm Li. Shortest path between two points
+#UTF-8
 
 from random import randint
 from tkinter import *
